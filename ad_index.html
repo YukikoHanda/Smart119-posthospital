@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>ポストホスピタル　Smart119</title> 
+    <link rel="stylesheet" href="assets/css/style.css">  
+
+</head>
+<body>
+<article>
+  <div class="sidemenu">
+  脳卒中
+  <ul>
+  <li>傷病者一覧</li>
+  <li><a href="#">ユーザ管理</a></li>
+  </ul>
+  <hr style="margin: 20px 0;">
+  <a href="#">ログアウト</a>
+  </div>
+
+<div id="main">
+<div>
+  <span class="pagettl">傷病者一覧</span>
+<span class="header-right">
+  	<a href="#">消防　太郎</a>
+  </span></div>
+<div class="search_box">
+<form>
+<select name="age">
+<option value="">XX歳～XX歳</option>
+<option value="その1">その1</option>
+<option value="その2">その2</option>
+</select>
+<select name="gender">
+<option value="">性別</option>
+<option value="その1">1</option>
+<option value="その2">2</option>
+</select>
+<select name="time">
+<option value="">指令時刻～指令時刻</option>
+<option value="その1">カレンダー入力</option>
+<option value="その2">2021-01-02 03:45～2021-01-03 04:56</option>
+</select>
+<select name="rescue">
+<option value="">救急隊</option>
+<option value="その1">その1</option>
+<option value="その2">全部表示できない...</option>
+</select>
+<select name="hospital">
+<option value="">搬送先</option>
+<option value="その1">その1</option>
+<option value="その2">全部表示できない場合は「…」</option>
+</select>
+<select name="status">
+<option value="">ステータス</option>
+<option value="その1">その1</option>
+<option value="その2">その2</option>
+</select>
+
+<button type="button">検索</button>
+</form>
+</div>
+
+<div id="list">
+
+<table width="100%" border="0">
+  <tbody>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">年齢</th>
+      <th scope="col">性別</th>
+      <th scope="col">指令時刻</th>
+      <th scope="col">救急隊</th>
+      <th scope="col">搬送先</th>
+      <th scope="col">ステータス</th>
+    </tr>
+    <tr>
+      <td>1234567890</td>
+      <td>70</td>
+      <td>男性</td>
+      <td>2021-09-20　12:34:56</td>
+      <td>稲毛救急1</td>
+      <td>千葉大学医学部病院</td>
+      <td><a href="#"><div class="btn01">未入力</div></a></td>
+    </tr>
+    <tr>
+      <td>1234567890</td>
+      <td>70</td>
+      <td>女性</td>
+      <td>2021-09-20　12:34:56</td>
+      <td>全部表示できない...</td>
+      <td>全部表示できない場合は「…」</td>
+      <td><a href="#"><div class="btn02">入力済</div></a></td>
+    </tr>
+    <tr>
+      <td>1234567890</td>
+      <td>60</td>
+      <td>女性</td>
+      <td>2021-09-20　12:34:56</td>
+      <td>全部表示できない...</td>
+      <td>全部表示できない場合は「…」</td>
+      <td><a href="#"><div class="btn02">入力済</div></a></td>
+    </tr>
+    <tr>
+      <td>1234567890</td>
+      <td>不明</td>
+      <td>女性</td>
+      <td>2021-09-20　12:34:56</td>
+      <td>全部表示できない...</td>
+      <td>全部表示できない場合は「…」</td>
+      <td><a href="#"><div class="btn02">入力済</div></a></td>
+    </tr>
+    <tr>
+      <td>1234567890</td>
+      <td>70</td>
+      <td>女性</td>
+      <td>2021-09-20　12:34:56</td>
+      <td>全部表示できない...</td>
+      <td>全部表示できない場合は「…」</td>
+      <td><a href="#"><div class="btn02">入力済</div></a></td>
+    </tr>
+    <tr>
+      <td>1234567890</td>
+      <td>70</td>
+      <td>男性</td>
+      <td>2021-09-20　12:34:56</td>
+      <td>稲毛救急1</td>
+      <td>千葉大学医学部病院</td>
+      <td><a href="#"><div class="btn01">未入力</div></a></td>
+    </tr>
+    <tr>
+      <td>1234567890</td>
+      <td>70</td>
+      <td>女性</td>
+      <td>2021-09-20　12:34:56</td>
+      <td>全部表示できない...</td>
+      <td>全部表示できない場合は「…」</td>
+      <td><a href="#"><div class="btn02">入力済</div></a></td>
+    </tr>
+    <tr>
+      <td>1234567890</td>
+      <td>60</td>
+      <td>女性</td>
+      <td>2021-09-20　12:34:56</td>
+      <td>全部表示できない...</td>
+      <td>全部表示できない場合は「…」</td>
+      <td><a href="#"><div class="btn02">入力済</div></a></td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<ul class="pagination">
+            
+<li class="page-item disabled"> <span class="page-link">‹</span></li>　
+<li class="page-item active" aria-current="page"><span class="page-link">1</span></li>　
+<li class="page-item"><a class="page-link" href="page=2">2</a></li>　
+<li class="page-item"><a class="page-link" href="page=3">3</a></li>　
+<li class="page-item"><a class="page-link" href="page=2" >›</a>
+</li>
+ </ul>
+
+</div>
+
+
+
+</div>
+</article>
+<div id="footer">
+  
+	        
+        </div>
+</body>
+</html>
