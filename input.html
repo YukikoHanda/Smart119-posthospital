@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>ポストホスピタル　Smart119</title> 
+    <link rel="stylesheet" href="assets/css/style.css">  
+
+</head>
+<body>
+<article>
+  <div class="sidemenu">
+  脳卒中
+  <ul>
+  <li>傷病者一覧</li>
+  
+  </ul>
+  <hr style="margin: 20px 0;">
+  <a href="#">ログアウト</a>
+  </div>
+
+<div id="main">
+<div>
+  <span class="pagettl">傷病者詳細</span>
+<span class="header-right">
+  	<a href="#">消防　太郎</a>
+  </span></div>
+
+
+<div id="input">
+
+<p class="input_ttl">傷病者情報</p>
+<p class="sub">No:1234567890</p>
+<div class="form gray">
+<dl class="box_half">
+<dt>指令日時</dt>
+<dd>YYYY-MM-DD HH:MM:mm</dd>
+
+<dt>病着日時</dt>
+<dd>YYYY-MM-DD HH:MM:mm</dd>
+
+<dt>生年月日</dt>
+<dd>昭和25年12月31日  XX歳<br>
+1950年年12月31日</dd>
+
+<dt>性別</dt>
+<dd>男性</dd>
+
+<dt>フリガナ</dt>
+<dd>フリガナ ハナコ</dd>
+
+<dt>氏名</dt>
+<dd>振り仮名　花子</dd>
+
+</dl>
+<dl class="box_half">
+<dt>搬送先病院</dt>
+<dd>〇〇〇〇〇〇病院</dd>
+
+<dt>救急隊名</dt>
+<dd>稲毛救急1</dd>
+
+</dl>
+
+</div>
+
+<p class="input_ttl">予測診断</p>
+<div class="form gray">
+<dl class="box">
+<dt>予測結果</dt>
+<dd class="red">脳卒中診断　XX％　　　　　主幹動脈閉塞　XX％　　　　　くも膜下　XX％</dd>
+
+<dt>入力</dt>
+<dd><p>発症時刻</p> HH：MM</dd>
+
+<dt></dt>
+<dd><p>突然の意識障害</p> あり</dd>
+
+<dt></dt>
+<dd><p>突然の頭痛</p> あり</dd>
+
+<dt></dt>
+<dd><p>痙攣</p> あり</dd>
+
+<dt></dt>
+<dd><p>上肢麻痺</p> あり</dd>
+
+<dt></dt>
+<dd><p>顔面麻痺</p> あり</dd>
+
+<dt></dt>
+<dd><p>片麻痺</p> 不明</dd>
+
+<dt></dt>
+<dd><p>構音障害</p> あり</dd>
+
+<dt></dt>
+<dd><p>失語</p> あり</dd>
+
+<dt></dt>
+<dd><p>共同偏視</p> あり</dd>
+
+<dt></dt>
+<dd><p>半側空間失認</p> あり</dd>
+
+<dt></dt>
+<dd><p>血圧(右)</p> XXXｍｍHg(もしくは測定不能）　/ 　XXXｍｍHg(もしくは測定不能）</dd>
+
+<dt></dt>
+<dd><p>JCS</p> XXXX</dd>
+
+<dt></dt>
+<dd><p>GCS</p> XX　XX　XX　XX</dd>
+
+<dt></dt>
+<dd><p>脈拍</p> XXX回/分(もしくは測定不能）</dd>
+
+<dt></dt>
+<dd><p>心房細動</p> あり</dd>
+
+<dt></dt>
+<dd><p>心房細動の既往</p> あり</dd>
+
+<dt></dt>
+<dd><p>嘔吐</p> あり</dd>
+
+<dt></dt>
+<dd><p>体温</p> XXX度(もしくは測定不能）</dd>
+
+</dl>
+</div>
+
+
+<form>
+<p class="input_ttl">事務・医療機関入力</p>
+<p class="sub">＜患者情報＞</p>
+<div class="form">
+<dl class="box_half">
+
+<dt>生年月日</dt>
+<dd>和暦　<input type="text" name="生年月日" class="textlines" value="昭和25年12月31日" required><input type="text" name="年齢" class="textlines textline_s" value="XX" required>　歳</dd>
+<dt></dt>
+<dd>西暦　<input type="text" name="生年月日" class="textlines" value="1950年年12月31日" required><br>
+</dd>
+
+<dt>性別</dt>
+<dd><input type="radio" checked>男性　<input type="radio">女性</dd>
+
+<dt>フリガナ</dt>
+<dd><input type="text" name="フリガナ" class="textlines" value="フリガナ ハナコ" required></dd>
+
+<dt>氏名</dt>
+<dd><input type="text" name="氏名" class="textlines" value="振り仮名　花子" required></dd>
+
+</dl>
+<dl class="box_half">
+<dt>病着日時</dt>
+<dd><input type="text" name="病着日時" class="textlines" value="YYYY/MM/DD　HH：MM" required></dd>
+
+<dt>ID</dt>
+<dd><input type="text" name="病着日時" class="textlines" value="123456" required></dd>
+
+</dl>
+</div>
+
+<p class="sub">＜最終診断＞</p>
+<div class="form">
+<dl class="box">
+
+<dt><input type="radio" checked>くも膜下出血</dt>
+<dd>H&K Grade：<input type="checkbox">Ⅰ　<input type="checkbox">Ⅱ　<input type="checkbox">Ⅲ　<input type="checkbox">Ⅳ　<input type="checkbox">Ⅴ　</dd>
+<dt><input type="radio" >脳梗塞</dt>
+<dd class="table_box">NIHSS：　<input type="text" name="脳梗塞" class="textlines" value="XXXXXXXXXX" required><br>
+主幹動脈(※)閉塞：<input type="radio" checked>あり　<input type="radio" >なし　<input type="radio" >不明<br>
+<span style="font-size:11px">(※)主幹動脈とは、頚動脈、前大脳動脈(A1)、中大脳動脈（M1/M2）、椎骨動脈、脳底動脈、後大脳動脈(P1)を示す。</span><br>
+いずれか一つ選択：<input type="radio" checked>アテローム血栓性脳梗塞　<input type="radio" >心原性脳塞栓症　<input type="radio" >ラクナ梗塞　<input type="radio" >その他　<input type="radio" >分類困難
+</dd>
+
+<dt><input type="radio" >脳出血</dt>
+<dd>部位：<input type="checkbox">被殻　<input type="checkbox">視床　<input type="checkbox">皮質下　<input type="checkbox">小脳　<input type="checkbox">脳幹　<input type="checkbox">脳室内　<input type="checkbox">その他</dd>
+
+<dt><input type="radio" >TIA</dt>
+<dd class="table_box">　</dd>
+
+<dt><input type="radio" >てんかん発作</dt>
+<dd class="table_box">　</dd>
+
+<dt><input type="radio" >その他</dt>
+<dd><input type="text" name="脳梗塞" class="textlines" value="XXXXXXXXXX" required></dd>
+
+</dl>
+</div>
+
+<p class="sub">＜治療内容＞</p>
+<div class="form">
+<dl class="box">
+
+<dt>くも膜下出血</dt>
+<dd><input type="checkbox">開頭クリッピング　<input type="checkbox">コイル塞栓術　<input type="checkbox">保存的治療　</dd>
+<dt>脳梗塞</dt>
+<dd class="table_box"><input type="checkbox">tPA静注療法　<input type="checkbox">機械的血栓回収療法　<input type="checkbox">その他の治療(血栓溶解、血管拡張など）　<input type="checkbox">保存的治療</dd>
+
+<dt>脳出血</dt>
+<dd><input type="checkbox">血腫除去（ドレナージ含む）　<input type="checkbox">脳室ドレナージ　<input type="checkbox">保存的治療　</dd>
+
+</dl>
+</div>
+
+<p class="sub">＜転帰＞</p>	
+<div class="form">
+<dl class="box">
+
+<dt><input type="checkbox" checked>入院</dt>
+<dd class="table_box">退院日：<input type="text" name="退院日" class="textlines" value="YYYY/MM/DD" required><br>
+退院時modified Rankin Scale：<input type="radio">0　<input type="radio">1　<input type="radio">2　<input type="radio">3　<input type="radio">4　<input type="radio">5　<input type="radio">6</dd>
+
+<dt><input type="checkbox" checked>帰宅</dt>
+<dd class="table_box">　</dd>
+
+<dt><input type="checkbox">転院</dt>
+<dd class="table_box">退院日：　YYYY/MM/DD<br>
+転院先：<input type="text" name="転院先" class="textlines" value="〇〇病院" required></dd>
+
+</dl>
+</div>
+
+</form>
+
+<a href="#"><div class="btn03">保存</div></a><a href="#"><div class="btn04">キャンセル</div></a>
+
+
+<p class="clearfix">１．入院後初期治療段階での転院搬送の場合には入院・転院の両方を入力してください。 <br>
+
+２．急性期を過ぎた後に転院となった場合は入院チェック欄のみチェックしてください。<br>
+３．くも膜下出血、脳梗塞、脳出血の場合は、退院時modified Rankin Scaleを選択してください。<br>
+４．救外で治療(tPAなど)を開始してからの転院の場合には＜治療内容＞の該当欄にチェックの上、転帰の欄は転院チェック欄のみチェックをお願い致します。</p>
+
+</div>
+
+
+
+</div>
+
+
+</article>
+<div id="footer">
+  
+	        
+        </div>
+</body>
+</html>

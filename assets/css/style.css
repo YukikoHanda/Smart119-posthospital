@@ -1,0 +1,297 @@
+@charset "UTF-8";
+/* Scss Document */
+html,body,div,p,dl, dt, dd {
+	margin: 0;  /* 余分なマージンを消去 */
+	padding: 0; /* 余分なパディングを消去 */
+	font-size: 13px;
+	}
+	html,body, .sidemenu {
+	/* height: 100%;  min-heightに対応していないブラウザ用 */
+}
+
+	p { line-height:2;}
+	li { list-style:none;}
+	a{
+	text-decoration: underline;
+	color: #000000;
+}
+	.login {
+	background-color: #434343;
+	color: #fff;
+	}
+	.login a { text-decoration: none; }
+	
+	#login { display:flex; margin: 0 auto; width:700px; padding:10% 4%; 
+	}
+	.login_input { display: table; width: 100%;
+	}
+	
+		
+	#login_box { font-size: 14px; line-height:2; 
+	display: table-cell;
+	vertical-align: middle;
+	}
+	#login_box li { padding: 10px 0;
+	}
+	
+	#login_box p {
+	width: 100px;
+	float: left;
+	
+}
+	.btn_login {
+	padding: 0.5% 3%;
+	border-radius: 10px;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 2em;
+	text-align: center;
+	color: #000000;
+	border: none;
+	background-color: #48e8d3;
+	width: 100px;
+	margin: 10px auto;
+	}	
+	
+	
+	article {
+	display: flex;
+	height: 100%;
+	
+	}
+	.sidemenu {
+  background-color:#434343;
+  color:#fff;
+  width:15%;
+  min-height:800px;
+  padding:40px 4%;
+  font-size:16px;
+	}
+	.sidemenu li {
+	margin: 10px 0;
+	color: #48e8d3;
+}
+	.sidemenu a {
+		color:#48e8d3;
+		text-decoration:underline;}
+		
+	body > div.sidemenu {
+  	height: auto; /* 要素を超えた分の背景が伸びないブラウザ用 */
+	}
+	#main {
+	width: 98%;
+	min-height: 100%;
+	margin: 40px 20px;
+	}
+	.search_box{
+	margin-top: 55px;
+	margin-bottom: 30px;
+
+	}
+	.search_box select {
+	padding: 0.5em;
+	position: relative;
+	border-radius: 0.4em;
+	margin-right:0.2%;
+	margin-bottom:20px;
+	}
+	.free-text {
+	padding: 0.5em;
+	position: relative;
+	border-radius: 0.4em;
+	margin-right: 0.2%;
+	margin-bottom: 20px;
+	width: 230px;
+	}
+	
+	button {
+	padding: 0.5em 20px;
+	border-radius: 0.4em;
+	text-decoration: none;
+	color: #ffffff;
+	border: 1px solid #696969;
+	background-color: #48e8d3;
+	max-width: 12%;
+	}
+	.pagination {
+	display: flex;
+	padding-left: 0;
+	list-style: none;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+	}
+	.pagettl{
+	font-size: 16px;
+	font-weight: bold;
+}
+	.header-right {
+	float: right;
+	font-size: 14px;
+}
+	.btn01 {
+	padding: 3% 3%;
+	border-radius: 10px;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 2em;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border: none;
+	background-color:#d95555;
+	width:50px;
+	margin:0 auto;
+	}
+	#list a {text-decoration:none;}
+	.btn02 {
+	padding: 3% 3%;
+	border-radius: 10px;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 2em;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border: none;
+	background-color:#13adce;
+	width:50px;
+	margin:0 auto;
+	}
+	#list { margin:20px 0;}
+	#list table th { background-color:#929595;
+	color:#fff;
+	padding:10px;
+	font-weight:normal;
+	text-align:left;
+	white-space: nowrap;
+	}
+	#list table th:first-child, 
+	#list td:first-child {
+	padding-left: 20px;
+	}
+	#list table > :not(caption) > * > * {
+	padding: 1rem 0.5rem;
+	}
+	#list table tr:nth-of-type(2n) {
+	background-color: #ffffff;
+}
+	#list table tr:nth-of-type(2n+1) {
+	background-color: #d7ebeb;
+}
+	.btn03 {
+	padding: 0.5% 3%;
+	border-radius: 10px;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 2em;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border: none;
+	background-color: #48e8d3;
+	width: 50px;
+	margin-top: 0;
+	margin-right: 30px;
+	margin-left: auto;
+	margin-bottom: 0;
+	float: right;
+	}
+	.btn04 {
+	padding: 0.5% 3%;
+	border-radius: 10px;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 2em;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border: none;
+	background-color: #4d4d4d;
+	width: 80px;
+	margin-top: 0;
+	margin-right: 20px;
+	margin-left: auto;
+	margin-bottom: 0;
+	float: right;
+	}
+	.btn05 {
+	padding: 0.5% 3%;
+	border-radius: 10px;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 2em;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border: none;
+	background-color: #d95555;
+	width: 80px;
+	margin-top: 0;
+	margin-right: 20px;
+	margin-bottom: 0;
+	float: left;
+	margin-left: 30px;
+	}
+	
+	#input .form {
+	padding: 10px 30px;
+	display: flex;
+}
+	
+	#input dl { margin:10px 3%;
+	}
+	#input dl.box_half {
+	width: 50%;
+	margin: 0;
+	padding: 0;
+	line-height: 2;
+}
+	#input dl.box {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+	#input dl dt {
+	padding: 10px 0;
+	width: 110px;
+	float: left;
+}
+	#input dl dd {
+	padding: 10px 0;
+	width: 100%;
+}
+	#input dl dd p {
+		width:20%;
+		float:left;
+		}
+	
+	.input_ttl {
+	background-color: #929595;
+	color: #fff;
+	padding: 10px 30px;
+	margin: 20px 0px;
+	font-weight: bold;
+}
+	.sub { padding: 10px 30px; }
+	.red {color:#da0101; font-weight:bold;}
+	.gray {color:#696969;}
+		
+	.textlines {
+	box-sizing: border-box;
+	padding: 0.5em;
+	line-height: 1.5;
+	font-size: 13px;
+}
+.textline_s {
+	width: 50px;
+	margin-left: 20px;
+}
+	dd.table_box {
+		display:table-cell; line-height: 2; }
+		
+	.clearfix { content: ""; display: block; clear: both; margin:40px 30px;}
+	
